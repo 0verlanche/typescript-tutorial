@@ -21,3 +21,6 @@ const minus = (a: number, b: number): number => {
 
 let result = minus(10,7);
 console.log(result);
+
+let array: string[] = [];
+array = ["hello", "bye", "hi"];
