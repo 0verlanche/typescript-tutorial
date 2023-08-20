@@ -24,3 +24,7 @@ console.log(result);
 
 let array: string[] = [];
 array = ["hello", "bye", "hi"];
+
+let greet = () => {
+  console.log("Hello, World");
+}
