@@ -45,11 +45,11 @@ type StringOrNum = string | number;
 type ObjWithTypes = {name: string, uid: StringOrNum};
 
 const logDetails = (uid: StringOrNum, item: string) => {
-  console.log("${item} has a uid of ${uid}");
+  console.log(`${item} has a uid of ${uid}`);
 }
 
 const greeting = (user: ObjWithTypes) => {
- console.log("${user.name} says hello");
+ console.log(`${user.name} says hello`);
 }
 
 /*Function Sgnatures*/
@@ -57,7 +57,7 @@ const greeting = (user: ObjWithTypes) => {
 // example 1
 let sayHello: (a: string, b: string) => void;
 sayHello = (name: string, greeting: string) => {
-  console.log("${name} says ${greeting}");
+  console.log(`${name} says ${greeting}`);
 }
 
 // example 2
@@ -75,9 +75,12 @@ let log: (obj: {name: string, age: number}) => void;
 
 type ObjWithType = {name: string, age: number};
 log = (ninja: ObjWithType) => {
-  console.log("${ninja.name} is ${ninja.age} years old");
+  console.log(`${ninja.name} is ${ninja.age} years old`);
 }
 
+const act = (a: string, b:number): void => {
+  console.log(`${a} and ${b}`);
+}
 
 
 
